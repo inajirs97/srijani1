@@ -7,6 +7,9 @@ Deloitte Duplicate
 </title>
 </head>
 <body bgcolor="black">
+<script src="../html/js.js">
+             
+</script>
 <div class="row">
 	<div class="col-md-12 c1">
 
@@ -32,7 +35,7 @@ Deloitte Duplicate
 						<p class="formtitles">First Name </p>
 					</div>
 					<div class="col-md-6 field">
-						<input class="form-control" type="text" name="fname" placeholder="Enter Your First Name">
+						<input class="form-control" type="text"  name="fname" placeholder="Enter Your First Name">
 					</div>
 				</div>
 				
@@ -43,22 +46,32 @@ Deloitte Duplicate
 					<div class="col-md-6 field">
 						<input class="form-control" type="text" name="lname" placeholder="Enter Your Last Name">
 					</div>
-				</div>
-								<div class="row">
+				        </div>
+					<div class="row">
 					<div class="col-md-6">
 						<p class="formtitles">Enter Your Email </p>
 					</div>
 					<div class="col-md-6 field">
-						<input class="form-control" type="email" name="email" placeholder="Enter Your Email">
+						<input class="form-control" type="email" name="email" pattern = [a-z._0-9]+[@]{1}[A-Za-z]+(.com.co.in)placeholder="Enter Your Email">
 					</div>
 				</div>
+                  
+                                <div class="row">
+                                <div class = "col-md-6">
+                                <p class="formtitles"> Enter your password</p>
+                                </div>
+                                <div class ="col-md-6 field">
+                                <input class="form control" type="password" pattern = "[0-9A-Za-z@&*]{7}" placeholder= "Enter your password">
+                                 
+                               </div>
+                                </div>
 
 				<div class="row">
 					<div class="col-md-6">
 						<p class="formtitles">Contact No. </p>
 					</div>
 					<div class="col-md-6 field">
-						<input class="form-control" type="text" name="phone" placeholder="Enter Your Contact Number">
+						<input class="form-control" type="text" name="phone" pattern="[0-9]{10}" placeholder="Enter Your Contact Number">
 					</div>
 				</div>
 
@@ -132,7 +145,7 @@ Deloitte Duplicate
 
 				<div class="row">
 					<div class="col-md-6">
-						<center><input class="btn-success btnn" type="submit" name="submit" value="Submit"></center>
+						<center><input class="btn-success btnn" type="submit" name="submit" value="Submit" onclick="namef()"></center>
 					</div>
 					<div class="col-md-6">
 						<center><input class="btn-danger btnn" type="reset" name="reset" value="Reset"></center>
