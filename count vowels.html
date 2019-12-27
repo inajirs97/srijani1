@@ -1,0 +1,84 @@
+<html>
+	<script>
+		function vowel_count(str1)
+{
+  var vowel_list1 = 'aA';
+  var vowel_list2 = 'eE';
+  var vowel_list3 = 'iI';
+  var vowel_list4 = 'oO';
+  var vowel_list5 = 'uU';
+  
+  var vcount1 = 0;
+  var vcount2 = 0;
+  var vcount3 = 0;
+  var vcount4 = 0;
+  var vcount5 = 0;
+  
+  for(var x1 = 0; x1 < str1.length ; x1++)
+  {
+    if (vowel_list1.indexOf(str1[x1]) !== -1)
+    {
+      vcount1 += 1;
+    }
+  }
+  for(var x2 = 0; x2 < str1.length ; x2++)
+  {
+	    if (vowel_list2.indexOf(str1[x2]) !== -1)
+    {
+      vcount2 += 1;
+    }
+	}
+	for(var x3 = 0; x3 < str1.length ; x3++)
+  {
+    if (vowel_list3.indexOf(str1[x3]) !== -1)
+    {
+      vcount3 += 1;
+    }
+	}
+	for(var x4 = 0; x4 < str1.length ; x4++)
+  {
+	    if (vowel_list4.indexOf(str1[x4]) !== -1)
+    {
+      vcount4 += 1;
+    }
+	}
+	for(var x5 = 0; x5 < str1.length ; x5++)
+  {
+	   if (vowel_list5.indexOf(str1[x5]) !== -1)
+    {
+      vcount5 += 1;
+    }
+  
+  }
+  
+document.getElementById('s1').innerHTML=vcount1;
+document.getElementById('s2').innerHTML=vcount2;
+document.getElementById('s3').innerHTML=vcount3;
+document.getElementById('s4').innerHTML=vcount4;
+document.getElementById('s5').innerHTML=vcount5;
+}
+	
+	</script>
+	<form>
+	Enter a String:
+<input type="text" id="l1" name="t1" >
+<input type="button" value="Count" onclick="vowel_count(this.form.t1.value)"><br/>
+<table border="1">
+<tr>
+<td>Number of a/A:</td>
+<td>Number of e/E:</td>
+<td>Number of i/I:</td>
+<td>Number of o/O:</td>
+<td>Number of u/U:</td>
+</tr>
+<tr>
+
+<td><span id="s1"></span></td>
+<td><span id="s2"></span></td>
+<td><span id="s3"></span></td>
+<td><span id="s4"></span></td>
+<td><span id="s5"></span></td>
+</tr>
+</table>
+</form>
+</html>
